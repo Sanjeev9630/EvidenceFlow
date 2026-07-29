@@ -1,0 +1,12 @@
+SHELL FLEET RECEIPT (DEMO)
+Receipt No: SH-DSL-88421
+Date: 2024-02-08
+Customer: Nordwerk Industrial GmbH
+Site: Berlin Plant (BER)
+Country: DE
+
+Fuel: Diesel
+Quantity: 385 litres
+Vehicle group: Delivery vans
+
+Synthetic demo document for EvidenceFlow PDF extraction.

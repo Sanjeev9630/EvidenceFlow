@@ -1,0 +1,417 @@
+[
+  {
+    "factorKey": "ELEC-DE-GRID-2024-V1",
+    "version": "v1",
+    "activityType": "grid_electricity",
+    "category": "electricity",
+    "region": "DE",
+    "unit": "kWh",
+    "valueKgCo2e": 0.366,
+    "sourceLabel": "MOCK-DEFRA-2024",
+    "description": "Illustrative Germany grid electricity factor"
+  },
+  {
+    "factorKey": "ELEC-IT-GRID-2024-V1",
+    "version": "v1",
+    "activityType": "grid_electricity",
+    "category": "electricity",
+    "region": "IT",
+    "unit": "kWh",
+    "valueKgCo2e": 0.281,
+    "sourceLabel": "MOCK-DEFRA-2024",
+    "description": "Illustrative Italy grid electricity factor"
+  },
+  {
+    "factorKey": "ELEC-EU-GRID-2024-V1",
+    "version": "v1",
+    "activityType": "grid_electricity",
+    "category": "electricity",
+    "region": "EU",
+    "unit": "kWh",
+    "valueKgCo2e": 0.275,
+    "sourceLabel": "MOCK-DEFRA-2024",
+    "description": "Illustrative EU average grid electricity factor"
+  },
+  {
+    "factorKey": "ELEC-GLOBAL-GRID-2024-V1",
+    "version": "v1",
+    "activityType": "grid_electricity",
+    "category": "electricity",
+    "region": "GLOBAL",
+    "unit": "kWh",
+    "valueKgCo2e": 0.475,
+    "sourceLabel": "MOCK-IEA-2024",
+    "description": "Illustrative global average grid electricity factor"
+  },
+  {
+    "factorKey": "GAS-DE-2024-V1",
+    "version": "v1",
+    "activityType": "natural_gas",
+    "category": "natural_gas",
+    "region": "DE",
+    "unit": "kWh",
+    "valueKgCo2e": 0.183,
+    "sourceLabel": "MOCK-DEFRA-2024",
+    "description": "Natural gas combustion (kWh net CV)"
+  },
+  {
+    "factorKey": "GAS-EU-2024-V1",
+    "version": "v1",
+    "activityType": "natural_gas",
+    "category": "natural_gas",
+    "region": "EU",
+    "unit": "kWh",
+    "valueKgCo2e": 0.184,
+    "sourceLabel": "MOCK-DEFRA-2024"
+  },
+  {
+    "factorKey": "GAS-M3-EU-2024-V1",
+    "version": "v1",
+    "activityType": "natural_gas",
+    "category": "natural_gas",
+    "region": "EU",
+    "unit": "m3",
+    "valueKgCo2e": 2.02,
+    "sourceLabel": "MOCK-DEFRA-2024",
+    "description": "Natural gas by cubic metre"
+  },
+  {
+    "factorKey": "DIESEL-EU-2024-V1",
+    "version": "v1",
+    "activityType": "diesel",
+    "category": "diesel",
+    "region": "EU",
+    "unit": "litre",
+    "valueKgCo2e": 2.68,
+    "sourceLabel": "MOCK-DEFRA-2024"
+  },
+  {
+    "factorKey": "DIESEL-DE-2024-V1",
+    "version": "v1",
+    "activityType": "diesel",
+    "category": "diesel",
+    "region": "DE",
+    "unit": "litre",
+    "valueKgCo2e": 2.68,
+    "sourceLabel": "MOCK-DEFRA-2024"
+  },
+  {
+    "factorKey": "PETROL-EU-2024-V1",
+    "version": "v1",
+    "activityType": "petrol",
+    "category": "petrol",
+    "region": "EU",
+    "unit": "litre",
+    "valueKgCo2e": 2.31,
+    "sourceLabel": "MOCK-DEFRA-2024"
+  },
+  {
+    "factorKey": "PETROL-DE-2024-V1",
+    "version": "v1",
+    "activityType": "petrol",
+    "category": "petrol",
+    "region": "DE",
+    "unit": "litre",
+    "valueKgCo2e": 2.31,
+    "sourceLabel": "MOCK-DEFRA-2024"
+  },
+  {
+    "factorKey": "FREIGHT-ROAD-EU-2024-V1",
+    "version": "v1",
+    "activityType": "road_freight",
+    "category": "road_freight",
+    "region": "EU",
+    "unit": "tkm",
+    "valueKgCo2e": 0.107,
+    "sourceLabel": "MOCK-DEFRA-2024",
+    "description": "Average HGV road freight"
+  },
+  {
+    "factorKey": "FREIGHT-ROAD-DE-2024-V1",
+    "version": "v1",
+    "activityType": "road_freight",
+    "category": "road_freight",
+    "region": "DE",
+    "unit": "tkm",
+    "valueKgCo2e": 0.105,
+    "sourceLabel": "MOCK-DEFRA-2024"
+  },
+  {
+    "factorKey": "FREIGHT-SEA-GLOBAL-2024-V1",
+    "version": "v1",
+    "activityType": "sea_freight",
+    "category": "sea_freight",
+    "region": "GLOBAL",
+    "unit": "tkm",
+    "valueKgCo2e": 0.016,
+    "sourceLabel": "MOCK-DEFRA-2024",
+    "description": "Container ship average"
+  },
+  {
+    "factorKey": "FREIGHT-AIR-GLOBAL-2024-V1",
+    "version": "v1",
+    "activityType": "air_freight",
+    "category": "air_freight",
+    "region": "GLOBAL",
+    "unit": "tkm",
+    "valueKgCo2e": 1.04,
+    "sourceLabel": "MOCK-DEFRA-2024"
+  },
+  {
+    "factorKey": "TRAVEL-CAR-EU-2024-V1",
+    "version": "v1",
+    "activityType": "business_travel_car",
+    "category": "business_travel",
+    "region": "EU",
+    "unit": "km",
+    "valueKgCo2e": 0.171,
+    "sourceLabel": "MOCK-DEFRA-2024"
+  },
+  {
+    "factorKey": "TRAVEL-RAIL-EU-2024-V1",
+    "version": "v1",
+    "activityType": "business_travel_rail",
+    "category": "business_travel",
+    "region": "EU",
+    "unit": "km",
+    "valueKgCo2e": 0.035,
+    "sourceLabel": "MOCK-DEFRA-2024"
+  },
+  {
+    "factorKey": "TRAVEL-AIR-SHORT-EU-2024-V1",
+    "version": "v1",
+    "activityType": "business_travel_air_short",
+    "category": "business_travel",
+    "region": "EU",
+    "unit": "passenger_km",
+    "valueKgCo2e": 0.156,
+    "sourceLabel": "MOCK-DEFRA-2024"
+  },
+  {
+    "factorKey": "TRAVEL-AIR-LONG-GLOBAL-2024-V1",
+    "version": "v1",
+    "activityType": "business_travel_air_long",
+    "category": "business_travel",
+    "region": "GLOBAL",
+    "unit": "passenger_km",
+    "valueKgCo2e": 0.191,
+    "sourceLabel": "MOCK-DEFRA-2024"
+  },
+  {
+    "factorKey": "STEEL-EU-2024-V1",
+    "version": "v1",
+    "activityType": "steel",
+    "category": "steel",
+    "region": "EU",
+    "unit": "kg",
+    "valueKgCo2e": 1.95,
+    "sourceLabel": "MOCK-ECOINVENT-STYLE",
+    "description": "Illustrative primary steel factor"
+  },
+  {
+    "factorKey": "STEEL-GLOBAL-2024-V1",
+    "version": "v1",
+    "activityType": "steel",
+    "category": "steel",
+    "region": "GLOBAL",
+    "unit": "kg",
+    "valueKgCo2e": 2.15,
+    "sourceLabel": "MOCK-ECOINVENT-STYLE"
+  },
+  {
+    "factorKey": "ALU-EU-2024-V1",
+    "version": "v1",
+    "activityType": "aluminium",
+    "category": "aluminium",
+    "region": "EU",
+    "unit": "kg",
+    "valueKgCo2e": 8.2,
+    "sourceLabel": "MOCK-ECOINVENT-STYLE",
+    "description": "Illustrative primary aluminium factor"
+  },
+  {
+    "factorKey": "ALU-GLOBAL-2024-V1",
+    "version": "v1",
+    "activityType": "aluminium",
+    "category": "aluminium",
+    "region": "GLOBAL",
+    "unit": "kg",
+    "valueKgCo2e": 12.5,
+    "sourceLabel": "MOCK-ECOINVENT-STYLE"
+  },
+  {
+    "factorKey": "ELEC-DE-GRID-2023-V1",
+    "version": "v1",
+    "activityType": "grid_electricity",
+    "category": "electricity",
+    "region": "DE",
+    "unit": "kWh",
+    "valueKgCo2e": 0.385,
+    "sourceLabel": "MOCK-DEFRA-2023",
+    "description": "Prior-year DE grid factor for version demos"
+  },
+  {
+    "factorKey": "DIESEL-KG-EU-2024-V1",
+    "version": "v1",
+    "activityType": "diesel",
+    "category": "diesel",
+    "region": "EU",
+    "unit": "kg",
+    "valueKgCo2e": 3.17,
+    "sourceLabel": "MOCK-DEFRA-2024"
+  },
+  {
+    "factorKey": "GAS-DE-M3-2024-V1",
+    "version": "v1",
+    "activityType": "natural_gas",
+    "category": "natural_gas",
+    "region": "DE",
+    "unit": "m3",
+    "valueKgCo2e": 2.02,
+    "sourceLabel": "MOCK-DEFRA-2024"
+  },
+  {
+    "factorKey": "FREIGHT-ROAD-GLOBAL-2024-V1",
+    "version": "v1",
+    "activityType": "road_freight",
+    "category": "road_freight",
+    "region": "GLOBAL",
+    "unit": "tkm",
+    "valueKgCo2e": 0.12,
+    "sourceLabel": "MOCK-DEFRA-2024"
+  },
+  {
+    "factorKey": "TRAVEL-CAR-DE-2024-V1",
+    "version": "v1",
+    "activityType": "business_travel_car",
+    "category": "business_travel",
+    "region": "DE",
+    "unit": "km",
+    "valueKgCo2e": 0.168,
+    "sourceLabel": "MOCK-DEFRA-2024"
+  },
+  {
+    "factorKey": "STEEL-EU-TONNE-2024-V1",
+    "version": "v1",
+    "activityType": "steel",
+    "category": "steel",
+    "region": "EU",
+    "unit": "tonne",
+    "valueKgCo2e": 1950,
+    "sourceLabel": "MOCK-ECOINVENT-STYLE"
+  },
+  {
+    "factorKey": "ALU-EU-TONNE-2024-V1",
+    "version": "v1",
+    "activityType": "aluminium",
+    "category": "aluminium",
+    "region": "EU",
+    "unit": "tonne",
+    "valueKgCo2e": 8200,
+    "sourceLabel": "MOCK-ECOINVENT-STYLE"
+  },
+  {
+    "factorKey": "ELEC-FR-GRID-2024-V1",
+    "version": "v1",
+    "activityType": "grid_electricity",
+    "category": "electricity",
+    "region": "FR",
+    "unit": "kWh",
+    "valueKgCo2e": 0.056,
+    "sourceLabel": "MOCK-DEFRA-2024",
+    "description": "Illustrative France low-carbon grid"
+  },
+  {
+    "factorKey": "ELEC-PL-GRID-2024-V1",
+    "version": "v1",
+    "activityType": "grid_electricity",
+    "category": "electricity",
+    "region": "PL",
+    "unit": "kWh",
+    "valueKgCo2e": 0.72,
+    "sourceLabel": "MOCK-DEFRA-2024"
+  },
+  {
+    "factorKey": "PETROL-KG-EU-2024-V1",
+    "version": "v1",
+    "activityType": "petrol",
+    "category": "petrol",
+    "region": "EU",
+    "unit": "kg",
+    "valueKgCo2e": 3.1,
+    "sourceLabel": "MOCK-DEFRA-2024"
+  },
+  {
+    "factorKey": "TRAVEL-RAIL-DE-2024-V1",
+    "version": "v1",
+    "activityType": "business_travel_rail",
+    "category": "business_travel",
+    "region": "DE",
+    "unit": "km",
+    "valueKgCo2e": 0.032,
+    "sourceLabel": "MOCK-DEFRA-2024"
+  },
+  {
+    "factorKey": "FREIGHT-SEA-EU-2024-V1",
+    "version": "v1",
+    "activityType": "sea_freight",
+    "category": "sea_freight",
+    "region": "EU",
+    "unit": "tkm",
+    "valueKgCo2e": 0.015,
+    "sourceLabel": "MOCK-DEFRA-2024"
+  },
+  {
+    "factorKey": "GAS-IT-2024-V1",
+    "version": "v1",
+    "activityType": "natural_gas",
+    "category": "natural_gas",
+    "region": "IT",
+    "unit": "kWh",
+    "valueKgCo2e": 0.184,
+    "sourceLabel": "MOCK-DEFRA-2024"
+  },
+  {
+    "factorKey": "DIESEL-IT-2024-V1",
+    "version": "v1",
+    "activityType": "diesel",
+    "category": "diesel",
+    "region": "IT",
+    "unit": "litre",
+    "valueKgCo2e": 2.68,
+    "sourceLabel": "MOCK-DEFRA-2024"
+  },
+  {
+    "factorKey": "ELEC-MWH-DE-2024-V1",
+    "version": "v1",
+    "activityType": "grid_electricity",
+    "category": "electricity",
+    "region": "DE",
+    "unit": "MWh",
+    "valueKgCo2e": 366,
+    "sourceLabel": "MOCK-DEFRA-2024",
+    "description": "Same DE grid factor expressed per MWh"
+  },
+  {
+    "factorKey": "OTHER-SPEND-EUR-GLOBAL-2024-V1",
+    "version": "v1",
+    "activityType": "spend_proxy",
+    "category": "other",
+    "region": "GLOBAL",
+    "unit": "EUR",
+    "valueKgCo2e": 0.28,
+    "sourceLabel": "MOCK-SPEND-PROXY",
+    "description": "Low-confidence spend-based proxy — prefer activity data"
+  },
+  {
+    "factorKey": "OTHER-UNKNOWN-GLOBAL-2024-V1",
+    "version": "v1",
+    "activityType": "unknown",
+    "category": "other",
+    "region": "GLOBAL",
+    "unit": "unit",
+    "valueKgCo2e": 1,
+    "sourceLabel": "MOCK-PLACEHOLDER",
+    "description": "Fallback placeholder — should lower confidence"
+  }
+]

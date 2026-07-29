@@ -1,0 +1,7 @@
+travel_date,employee,site,mode,distance_km,country,purpose
+2024-01-10,A. Keller,BER,rail,580,DE,Customer audit
+2024-01-18,M. Rossi,MIL,car,240,IT,Supplier visit
+2024-02-02,A. Keller,BER,air_short,900,DE,Trade show
+2024-02-14,L. Bianchi,MIL,rail,320,IT,Plant review
+2024-03-05,S. Weber,MUC,car,180,DE,Logistics check
+2024-03-12,A. Keller,BER,air_long,6500,DE,Partner summit

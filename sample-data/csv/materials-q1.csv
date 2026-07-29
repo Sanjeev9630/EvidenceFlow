@@ -1,0 +1,5 @@
+date,site,material,quantity_kg,country,supplier
+2024-01-12,BER,steel,850,DE,Thyssen Demo
+2024-01-19,BER,aluminium,120,DE,Hydro Demo
+2024-02-02,MIL,steel,640,IT,Acciaierie Demo
+2024-02-16,MUC,aluminium,95,DE,Hydro Demo

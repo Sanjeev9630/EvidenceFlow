@@ -1,0 +1,13 @@
+NORDWERK INDUSTRIAL GMBH — UTILITY INVOICE (DEMO)
+Invoice No: NW-GAS-2024-0218
+Issue Date: 2024-02-18
+Customer: Nordwerk Industrial GmbH — Berlin Plant (BER)
+Supplier: Gasnetz Berlin GmbH
+Service Period: 2024-01-01 to 2024-01-31
+
+Natural gas consumption: 12,450 kWh
+Meter ID: BER-GAS-9912
+Unit rate: illustrative only
+
+Notes: This is a synthetic invoice for EvidenceFlow demo purposes.
+Not a real utility bill. Emission factors applied by the platform are mock values.

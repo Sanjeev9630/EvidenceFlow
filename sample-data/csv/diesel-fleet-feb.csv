@@ -1,0 +1,6 @@
+invoice_date,site_code,fuel_type,quantity_litres,country,vendor,vehicle
+2024-02-01,BER,diesel,420,DE,Shell Fleet,Forklift fleet
+2024-02-08,BER,diesel,385,DE,Shell Fleet,Delivery vans
+2024-02-15,MUC,diesel,210,DE,Aral Business,Yard trucks
+2024-02-22,MIL,diesel,150,IT,Eni,Backup generator
+2024-03-01,BER,petrol,60,DE,Shell Fleet,Pool cars

@@ -1,0 +1,10 @@
+date,site,power_used_kwh,country,supplier,notes
+2024-01-15,BER,1240,DE,Stadtwerke Berlin,Plant floor A
+2024-02-15,BER,1185,DE,Stadtwerke Berlin,Plant floor A
+2024-03-15,BER,1310,DE,Stadtwerke Berlin,Plant floor A
+2024-01-15,MUC,860,DE,SWM,Warehouse lighting
+2024-02-15,MUC,910,DE,SWM,Warehouse lighting
+2024-03-15,MUC,895,DE,SWM,Warehouse lighting
+2024-01-20,MIL,1020,IT,Enel,Assembly line
+2024-02-20,MIL,990,IT,Enel,Assembly line
+2024-03-20,MIL,1105,IT,Enel,Assembly line

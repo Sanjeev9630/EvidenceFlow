@@ -1,0 +1,21 @@
+{
+  "name": "evidenceflow",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Audit-ready document ingestion pipeline for ESG data",
+  "scripts": {
+    "dev": "pnpm run --parallel dev:api dev:web",
+    "dev:api": "pnpm --filter @evidenceflow/api dev",
+    "dev:web": "pnpm --filter @evidenceflow/web dev",
+    "build": "pnpm --filter @evidenceflow/shared build && pnpm --filter @evidenceflow/api build && pnpm --filter @evidenceflow/web build",
+    "db:generate": "pnpm --filter @evidenceflow/api db:generate",
+    "db:push": "pnpm --filter @evidenceflow/api db:push",
+    "db:seed": "pnpm --filter @evidenceflow/api db:seed",
+    "db:reset-demo": "pnpm --filter @evidenceflow/api db:reset-demo",
+    "db:setup": "pnpm db:generate && pnpm db:push && pnpm db:seed"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "packageManager": "pnpm@9.15.0"
+}

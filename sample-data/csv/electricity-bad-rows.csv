@@ -1,0 +1,9 @@
+date,site,power_used_kwh,country,supplier,notes
+2024-01-15,BER,1240,DE,Stadtwerke Berlin,ok
+2024-02-15,BER,,DE,Stadtwerke Berlin,missing quantity
+2024-03-15,BER,-50,DE,Stadtwerke Berlin,negative electricity
+2024-04-31,BER,1000,DE,Stadtwerke Berlin,invalid date
+2024-05-15,XXX,900,ZZ,Unknown Co,unknown site and country
+2024-01-15,BER,1240,DE,Stadtwerke Berlin,duplicate of first row
+2024-06-15,MUC,970000,DE,SWM,outlier spike
+not-a-date,MIL,abc,IT,Enel,bad types

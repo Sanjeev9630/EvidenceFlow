@@ -1,0 +1,161 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Company {
+  id        String   @id @default(cuid())
+  name      String
+  createdAt DateTime @default(now())
+  sites     Site[]
+  imports   Import[]
+}
+
+model Site {
+  id          String        @id @default(cuid())
+  companyId   String
+  company     Company       @relation(fields: [companyId], references: [id], onDelete: Cascade)
+  code        String
+  name        String
+  country     String
+  createdAt   DateTime      @default(now())
+  activityRows ActivityRow[]
+
+  @@unique([companyId, code])
+}
+
+model SourceFile {
+  id           String   @id @default(cuid())
+  originalName String
+  mimeType     String
+  sizeBytes    Int
+  sha256       String
+  storagePath  String
+  createdAt    DateTime @default(now())
+  imports      Import[]
+}
+
+model Import {
+  id            String         @id @default(cuid())
+  companyId     String
+  company       Company        @relation(fields: [companyId], references: [id], onDelete: Cascade)
+  sourceFileId  String
+  sourceFile    SourceFile     @relation(fields: [sourceFileId], references: [id], onDelete: Cascade)
+  status        String         @default("uploaded")
+  rowCount      Int            @default(0)
+  warningCount  Int            @default(0)
+  errorCount    Int            @default(0)
+  qualityScore  Float?
+  totalKgCo2e   Float?
+  mappingJson   Json?
+  notes         String?
+  createdAt     DateTime       @default(now())
+  updatedAt     DateTime       @updatedAt
+  activityRows  ActivityRow[]
+  issues        Issue[]
+  calculations  Calculation[]
+}
+
+model ActivityRow {
+  id                   String        @id @default(cuid())
+  importId             String
+  import               Import        @relation(fields: [importId], references: [id], onDelete: Cascade)
+  siteId               String?
+  site                 Site?         @relation(fields: [siteId], references: [id])
+  date                 DateTime?
+  category             String?
+  activityType         String?
+  quantity             Float?
+  unit                 String?
+  country              String?
+  supplier             String?
+  description          String?
+  sourceRef            String?
+  extractionConfidence Float?
+  /** Auditor flag: supplier should provide better primary data for this row. */
+  needsBetterData      Boolean       @default(false)
+  needsBetterDataNote  String?
+  rawJson              Json?
+  createdAt            DateTime      @default(now())
+  updatedAt            DateTime      @updatedAt
+  issues               Issue[]
+  calculations         Calculation[]
+}
+
+model EmissionFactor {
+  id           String         @id @default(cuid())
+  factorKey    String         @unique
+  version      String
+  activityType String
+  category     String
+  region       String
+  unit         String
+  valueKgCo2e  Float
+  sourceLabel  String
+  description  String?
+  createdAt    DateTime       @default(now())
+  calculations Calculation[]
+}
+
+model Calculation {
+  id             String         @id @default(cuid())
+  importId       String
+  import         Import         @relation(fields: [importId], references: [id], onDelete: Cascade)
+  activityRowId  String
+  activityRow    ActivityRow    @relation(fields: [activityRowId], references: [id], onDelete: Cascade)
+  emissionFactorId String
+  emissionFactor EmissionFactor @relation(fields: [emissionFactorId], references: [id])
+  formula        String
+  resultKgCo2e   Float
+  confidence     Float?
+  /** Weighted rule breakdown for the confidence score (Day 5). */
+  confidenceJson Json?
+  createdAt      DateTime       @default(now())
+
+  // Frozen at calculation time so an audit trail survives later factor-library edits.
+  inputQuantity     Float
+  inputUnit         String
+  factorQuantity    Float
+  factorUnit        String
+  factorKey         String
+  factorVersion     String
+  factorValueKgCo2e Float
+  factorRegion      String
+  factorSourceLabel String
+  activityBasis     String
+  regionTier        String
+  matchNotes        String
+
+  @@unique([activityRowId])
+}
+
+model Issue {
+  id            String       @id @default(cuid())
+  importId      String
+  import        Import       @relation(fields: [importId], references: [id], onDelete: Cascade)
+  activityRowId String?
+  activityRow   ActivityRow? @relation(fields: [activityRowId], references: [id], onDelete: Cascade)
+  severity      String
+  code          String
+  message       String
+  createdAt     DateTime     @default(now())
+}
+
+/** Lightweight page-hit log for demo traffic (who opened the site / which path). */
+model Visited {
+  id        String   @id @default(cuid())
+  path      String
+  referrer  String?
+  userAgent String?
+  ip        String?
+  language  String?
+  screen    String?
+  createdAt DateTime @default(now())
+
+  @@index([createdAt])
+  @@map("visited")
+}
