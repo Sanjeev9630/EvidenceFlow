@@ -34,7 +34,8 @@ export async function analyticsRoutes(app: FastifyInstance) {
       });
     }
 
-    const userAgentHeader = req.headers["user-agent"];
+    // Fastify's header typing can be overly strict here, so cast to a union we handle explicitly.
+    const userAgentHeader = req.headers["user-agent"] as string | string[] | undefined;
     const userAgent =
       typeof userAgentHeader === "string"
         ? userAgentHeader.slice(0, 1000)
