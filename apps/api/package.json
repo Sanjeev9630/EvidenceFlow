@@ -13,6 +13,9 @@
     "db:reset-demo": "dotenv -e ../../.env -- tsx prisma/resetDemo.ts",
     "db:studio": "dotenv -e ../../.env -- prisma studio"
   },
+  "prisma": {
+    "schema": "prisma/schema.prisma"
+  },
   "dependencies": {
     "@evidenceflow/shared": "workspace:*",
     "@fastify/cors": "^10.0.1",

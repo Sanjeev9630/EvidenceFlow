@@ -15,7 +15,7 @@
     "db:setup": "pnpm db:generate && pnpm db:push && pnpm db:seed"
   },
   "engines": {
-    "node": ">=20"
+    "node": "22.x"
   },
   "packageManager": "pnpm@9.15.0"
 }
